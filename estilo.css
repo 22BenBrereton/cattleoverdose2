@@ -1,0 +1,9 @@
+#estilo {
+    display: flex;
+    justify-content: flex-start;
+    height: 250px;
+    color: red;
+}
+p {
+    color: blue;
+}
