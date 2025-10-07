@@ -1,9 +1,25 @@
-#estilo {
+.cshralbumes {
     display: flex;
     justify-content: flex-start;
+    flex-flow: row wrap;
+    justify-content: space-around;  
+    padding: 0;
+    margin: 0;
+  list-style: none;
     height: 250px;
     color: red;
 }
-p {
-    color: blue;
+.album {
+  background: rgb(146, 185, 190);
+  padding: 5px;
+  width: auto;
+  height: auto;
+  max-height: 100%;
+  max-width: 100%;
+  margin-top: 10px;
+  line-height: 150px;
+  color: white;
+  font-weight: bold;
+  font-size: 10px;
+  text-align: center;  
 }
