@@ -1,0 +1,65 @@
+.cajaprincipal {
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: row wrap;
+    justify-content: space-around;  
+    padding: 1px;
+    margin: 5px;
+    height: 90%;
+    max-width: 60%;
+    background-color: rgb(146, 185, 190);
+    text-align: center;
+}
+.album {
+  background: rgb(146, 185, 190);
+  padding: 5px;
+  width: auto;
+  height: auto;
+  max-height: 100%;
+  max-width: 100%;
+  margin-top: 10px;
+  line-height: 150px;
+  color: white;
+  font-weight: bold;
+  font-size: 10px;
+  text-align: center;  
+}
+
+.barrabotones {
+background-image: url("images/favicon.png");
+
+  background-color: lightcyan;
+  position: absolute;
+  bottom: -50vh;
+  right: 0vh;
+  display: flex;
+  justify-content: end;
+  flex-flow: row;
+  align-items: flex-start;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  height: 10vh;
+  width: 50vw;
+  color: red;
+}
+
+.botones {
+  background-color: blue;
+  position: relative;
+  padding: 5px;
+  margin: 5px;
+  list-style: none;
+  max-width: auto;
+  max-height: 100%;
+  color: yellow;
+}
+
+.imagenboton {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  background-color: red;
+  width: auto;
+  max-height: 8vh;
+}

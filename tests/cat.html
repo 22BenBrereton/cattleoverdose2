@@ -4,12 +4,12 @@
     var chiikawa = 0;
     function catFunction() {
         if(chiikawa==0){
-            tfgemicara.src = "images/chiikawa.png"
+            tfgemicara.src = "../images/chiikawa.png"
             chiikawa = 1;
         }
 
         else {
-            tfgemicara.src = "images/tfgestMICARA.png"
+            tfgemicara.src = "../images/tfgestMICARA.png"
             chiikawa = 0;
         }     
     }
@@ -17,7 +17,7 @@
 <link rel="stylesheet" href="estilo.css"/>
 <body id="estilo">
     tfge 
-    <img id="tfgemicara" src="images/tfgestMICARA.png" alt="tfgestMICARA" width="50%" height="50%">
+    <img id="tfgemicara" src="../images/tfgestMICARA.png" alt="tfgestMICARA" width="50%" height="50%">
     <div>
         <button onclick="catFunction()">cat</button>
     </div>
