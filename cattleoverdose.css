@@ -1,7 +1,39 @@
+@font-face {
+  font-family: AllerDisplay;
+  src: url(fonts/AllerDisplay.ttf);
+}
+@font-face {
+  font-family: Aller_Bd;
+  src: url(fonts/Aller_Bd.ttf);
+}
+@font-face {
+  font-family: Aller_Lt;
+  src: url(fonts/Aller_Lt.ttf);
+}
+
+.toolbar {
+  position: absolute;
+  top: 0vh;
+  left: 0vh;
+  display: flex;
+  justify-content: flex-end;
+  flex-flow: row;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  height: 3.5vh;
+  width: 100%;
+  background-color: lightcyan;
+  font-family: Aller_Bd;
+}
 .cajaprincipal {
+    position: auto;
+    top: 0vh;
+    left: 0vh;
     display: flex;
     justify-content: flex-start;
-    flex-flow: row wrap;
+    flex-flow: column;
     justify-content: space-around;  
     padding: 1px;
     margin: 5px;
