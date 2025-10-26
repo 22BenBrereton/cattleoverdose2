@@ -21,26 +21,63 @@
   align-items: center;
   padding: 0;
   margin: 0;
-  list-style: none;
   height: 3.5vh;
   width: 100%;
   background-color: lightcyan;
   font-family: Aller_Bd;
 }
-.cajaprincipal {
-    position: auto;
-    top: 0vh;
-    left: 0vh;
-    display: flex;
-    justify-content: flex-start;
-    flex-flow: column;
-    justify-content: space-around;  
-    padding: 1px;
-    margin: 5px;
-    height: 90%;
-    max-width: 60%;
-    background-color: rgb(146, 185, 190);
-    text-align: center;
+.toolbar-tools {
+  position: relative;
+  display: flex;
+  margin: 3%;
+  height: auto;
+  width: auto;
+}
+
+.box-main {
+  /*box arrangement*/
+  position: center;
+  top: 0vh;
+  left: 0vh;
+  display: flex;
+  justify-content: auto;
+  flex-flow: column;
+  align-items: auto;
+  padding: 0px;
+  margin: 20%;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  height: 90%;
+  width: auto;
+  max-width: auto;
+  background-color: rgb(146, 185, 190);
+
+  /*text*/
+  text-align: center;
+}
+
+.box-left {
+  /*box arrangement*/
+  position: relative;
+  display: flex;
+  justify-content: left;
+  flex-flow: column;
+  align-items: center;
+  padding: 0px;
+  margin-top: 5%;
+  margin-bottom: 0;
+  height: 100%;
+  width: 30%;
+  max-width: 30%;
+  background-color: rgb(79, 93, 170);
+
+  /*text*/
+  text-align: center;
+}
+
+.text-image {
+  max-height: 15vh;
+  max-width: auto;
 }
 .album {
   background: rgb(146, 185, 190);
