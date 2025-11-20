@@ -1,0 +1,50 @@
+ 	
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <style>
+    .ui-dialog-titlebar {
+      overflow: hidden;
+    }
+    .ui-dialog-titlebar-close {
+      visibility: hidden;
+    }
+    .ui-dialog {
+      overflow: hidden;
+    }
+  </style>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery UI Dialog - Default functionality</title>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+
+  <script src="plugins/jquery-ui-1.14.1.custom/external/jquery/jquery.js"></script>
+  <script src="plugins/jquery-ui-1.14.1.custom/jquery-ui.js"></script>
+</head>
+<body>
+  
+  <div id="dialog" title="Basic dialog" style="background-color: red">
+    <img id="popupimg" src="images/cs-ola bienvenido.png" alt="mensaje de bienvenida">
+    <p>This is the default dialog which is useful for displaying information. The dialog window can be moved, resized and closed with the 'x' icon.</p>
+  </div>
+  
+  
+
+  <script>
+    let popupwidth = popupimg.width;
+  $( function() {
+    $( "#dialog" ).dialog({
+      width: popupimg.width,
+      modal: true
+    });
+  } );
+
+
+  $( ".dialog" ).dialog( "option", "width", 10 );
+  console.log(popupwidth);
+  </script>
+</body>
+</html>

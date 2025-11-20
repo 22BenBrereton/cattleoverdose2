@@ -1,3 +1,13 @@
+:root {
+  --main-bg-color: rgb(193, 190, 226);
+  --box-main-bg-color: rgb(146, 185, 190);
+  --box-left-bg-color: rgb(79, 93, 170);
+  --box-center-bg-color: rgb(170, 79, 140);
+  --box-right-bg-color: rgb(79, 170, 147);
+  --box-content-bg-color: rgb(93, 155, 42);
+}
+
+
 @font-face {
   font-family: AllerDisplay;
   src: url(fonts/AllerDisplay.ttf);
@@ -11,6 +21,9 @@
   src: url(fonts/Aller_Lt.ttf);
 }
 
+body{
+  background-color: var(--main-bg-color);
+}
 .toolbar {
   position: absolute;
   top: 0vh;
@@ -21,7 +34,7 @@
   align-items: center;
   padding: 0;
   margin: 0;
-  height: 3.5vh;
+  height: 30px;
   width: 100%;
   background-color: lightcyan;
   font-family: Aller_Bd;
@@ -40,9 +53,9 @@
   top: 0vh;
   left: 0vh;
   display: flex;
-  justify-content: auto;
-  flex-flow: column;
-  align-items: auto;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: stretch;
   padding: 0px;
   margin: 20%;
   margin-top: 0%;
@@ -51,33 +64,84 @@
   width: auto;
   max-width: auto;
   background-color: rgb(146, 185, 190);
-
+  
   /*text*/
+  
   text-align: center;
 }
 
 .box-left {
   /*box arrangement*/
-  position: relative;
+  order: -1;
+  position: auto;
   display: flex;
   justify-content: left;
   flex-flow: column;
   align-items: center;
   padding: 0px;
-  margin-top: 5%;
+  margin-top: 0%;
+  top: 0vh;
   margin-bottom: 0;
   height: 100%;
+  min-height: 100%;
   width: 30%;
   max-width: 30%;
-  background-color: rgb(79, 93, 170);
+  background-color: var(--box-left-bg-color);
 
   /*text*/
   text-align: center;
+  word-wrap: break-word;
+  overflow: hidden;
+}
+.box-center {
+    /*box arrangement*/
+  order: 0;
+  position: auto;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  padding: 0px;
+  width: 40%;
+  max-width: 40%;
+  background-color: var(--box-center-bg-color);
+
+  /*text*/
+  text-align: center;
+  word-wrap: break-word;
+  overflow: hidden;
+}
+.box-right {
+  /*box arrangement*/
+  order: 1;
+  position: auto;
+  display: flex;
+  justify-content: right;
+  flex-flow: column;
+  align-items: center;
+  width: 30%;
+  max-width: 30%;
+  background-color: var(--box-right-bg-color);
+
+  /*text*/
+  text-align: center;
+  word-wrap: break-word;
+  overflow: hidden;
+  
 }
 
-.text-image {
-  max-height: 15vh;
-  max-width: auto;
+.box-content {
+  display: flex;
+  margin: 4%;
+  padding: 4%;
+  background-color: var(--box-content-bg-color);
+  object-fit: contain;
+  overflow-wrap: break-word;
+  
+}
+.box-content img {
+  width: 100%;
+  height: 100%;
+  align-items: center;
 }
 .album {
   background: rgb(146, 185, 190);

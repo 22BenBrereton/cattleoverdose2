@@ -8,6 +8,8 @@
 </head>
 
 <body>
+    <img src="images/gatoalf.jpg" style="position:absolute; right:0; bottom:0; height:20vh; width:auto;">
+    
     <div class="toolbar">
         <div class="toolbar-tools">
             <a href="aboutme.html">
@@ -24,17 +26,87 @@
     <div class="box-main">
         <div class="box-left">
             <p>holaaaa texto holaaa soy yoo</p>
-            
+            <a href="art/art.html">
+                dibujos y cosas!
+            </a>
+            <a href="osu/osu.html">
+                osu!!
+            </a>
+            <a href="music/music.html">
+                musica!
+            </a>
+            <a href="carseatheadrest.html">
+                otras cosas
+            </a>
             <p>
-                mi perfil de osu!
+                <div class="box-content">
+                    mi perfil de osu!
                 <a href="https://osu.ppy.sh/users/9812963">
-                    <img src="images/chiikawa.png" class="text-image"> 
+                    <img src="images/chiikawa.png"> 
                 </a>
+                </div>
             </p>    
+            <div>
+                holaaa
+            </div>
         </div>
-        <h1>mi página</h1>
+        <div class="box-center">
+            <h1>mi página</h1>
+        </div>
+        <div class="box-right">
+            <div class="box-content">   
+                </br>
+                </br>
+                a </br>
+                a </br>
+                a </br>
+                a </br>
+                a </br>
+
+
+
+                a holaaaaaaaaaa wua
+                wua
+            </div>
+
+            <div class="box-content">
+                <img src="images/tfgestMICARA.png">
+            </div>
+        </div>
         
     </div>
+
+
+
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+
+  
+  
+  <div id="dialog" title="Basic dialog" style="background-color: red">
+    <img id="popupimg" src="images/cs-ola bienvenido.png" alt="mensaje de bienvenida">
+    <p>This is the default dialog which is useful for displaying information. The dialog window can be moved, resized and closed with the 'x' icon.</p>
+  </div>
+  
+
+  
+
+  
+<script src="plugins/jquery-ui-1.14.1.custom/external/jquery/jquery.js"></script>
+<script src="plugins/jquery-ui-1.14.1.custom/jquery-ui.js"></script>
+<script>
+    let popupwidth = popupimg.width;
+  $( function() {
+    $( "#dialog" ).dialog({
+      width: popupimg.width,
+      modal: true
+    });
+  } );
+
+
+  $( ".dialog" ).dialog( "option", "width", 10 );
+  console.log(popupwidth);
+  </script>
 </body>
 
 
