@@ -1,10 +1,12 @@
 :root {
   --main-bg-color: rgb(193, 190, 226);
   --box-main-bg-color: rgb(146, 185, 190);
-  --box-left-bg-color: rgb(79, 93, 170);
-  --box-center-bg-color: rgb(170, 79, 140);
-  --box-right-bg-color: rgb(79, 170, 147);
-  --box-content-bg-color: rgb(93, 155, 42);
+
+  --box-left-bg-color: rgb(167, 147, 167);
+  --box-center-bg-color: rgb(155, 137, 172);
+  --box-right-bg-color: rgb(167, 147, 167);
+
+  --box-content-bg-color: rgb(196, 190, 207);
 }
 
 
@@ -21,9 +23,31 @@
   src: url(fonts/Aller_Lt.ttf);
 }
 
+#dialog img{
+  width: 40vw;
+  height: auto;
+}
+
+
 body{
   background-color: var(--main-bg-color);
+  background-image: url('images/cs-bg.gif');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+
 }
+h1{
+  
+}
+
+
+a img {
+  width: 100%;
+  height: 100%;
+  align-items: center;
+}
+
 .toolbar {
   position: absolute;
   top: 0vh;
@@ -63,10 +87,12 @@ body{
   height: 90%;
   width: auto;
   max-width: auto;
-  background-color: rgb(146, 185, 190);
+  background-color: none;
+  
+  /*border*/
+  border: 5px solid white;
   
   /*text*/
-  
   text-align: center;
 }
 
@@ -75,15 +101,9 @@ body{
   order: -1;
   position: auto;
   display: flex;
-  justify-content: left;
+  justify-content: right;
   flex-flow: column;
   align-items: center;
-  padding: 0px;
-  margin-top: 0%;
-  top: 0vh;
-  margin-bottom: 0;
-  height: 100%;
-  min-height: 100%;
   width: 30%;
   max-width: 30%;
   background-color: var(--box-left-bg-color);
@@ -136,6 +156,8 @@ body{
   background-color: var(--box-content-bg-color);
   object-fit: contain;
   overflow-wrap: break-word;
+
+  border: 2px solid white;
   
 }
 .box-content img {

@@ -8,6 +8,9 @@
 </head>
 
 <body>
+
+
+
     <img src="images/gatoalf.jpg" style="position:absolute; right:0; bottom:0; height:20vh; width:auto;">
     
     <div class="toolbar">
@@ -51,7 +54,9 @@
             </div>
         </div>
         <div class="box-center">
-            <h1>mi página</h1>
+            <div class="box-content" style="width:90%;">
+                cattleoverdose
+            </div>
         </div>
         <div class="box-right">
             <div class="box-content">   
@@ -72,6 +77,7 @@
             <div class="box-content">
                 <img src="images/tfgestMICARA.png">
             </div>
+            
         </div>
         
     </div>
@@ -82,12 +88,11 @@
   <link rel="stylesheet" href="/resources/demos/style.css">
 
   
-  
-  <div id="dialog" title="Basic dialog" style="background-color: red">
+  <!---
+  <div id="dialog" title="Basic dialog" style="background-color: rgb(25,33,66)">
     <img id="popupimg" src="images/cs-ola bienvenido.png" alt="mensaje de bienvenida">
-    <p>This is the default dialog which is useful for displaying information. The dialog window can be moved, resized and closed with the 'x' icon.</p>
   </div>
-  
+-->
 
   
 
@@ -95,20 +100,57 @@
 <script src="plugins/jquery-ui-1.14.1.custom/external/jquery/jquery.js"></script>
 <script src="plugins/jquery-ui-1.14.1.custom/jquery-ui.js"></script>
 <script>
-    let popupwidth = popupimg.width;
-  $( function() {
-    $( "#dialog" ).dialog({
-      width: popupimg.width,
-      modal: true
+    /*
+    
+    customElements.define("storage", Storage);
+    const element = document.createElement('storage');
+
+    // Get the text field that we're going to track
+    let field = document.getElementById("field");
+
+    // See if we have an autosave value
+    // (this will only happen if the page is accidentally refreshed)
+    if (sessionStorage.getItem("autosave")) {
+    // Restore the contents of the text field
+    field.value = sessionStorage.getItem("autosave");
+    }
+
+    // Listen for changes in the text field
+    field.addEventListener("change", () => {
+    // And save the results into the session storage object
+    sessionStorage.setItem("autosave", field.value);
     });
+    console.log(field.value);
+
+    */
+
+
+    /*
+    let poppedup = 0;
+  $( function() {
+
+    if(poppedup == 0){
+        poppedup = 1;
+        let popupwidth = document.getElementById("popupimg").width;
+        $( "#dialog" ).dialog({
+            width: popupwidth + 50,
+            modal: true
+        });
+        console.log(poppedup);
+    }
+    else{
+        $( ".dialog" ).dialog( "destroy" );
+        console.log(poppedup);
+    }
+
   } );
 
+    */
 
-  $( ".dialog" ).dialog( "option", "width", 10 );
-  console.log(popupwidth);
+
+  
   </script>
 </body>
-
 
 
 
