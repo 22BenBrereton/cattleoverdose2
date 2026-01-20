@@ -130,11 +130,12 @@
 
 
     
+
+    var image_x = document.getElementById('popupimg');
+    
    $( function() {
-    let poppedup = 0;
-       
-    if(poppedup == 0){
-        poppedup = 1;
+    if(sessionStorage.getItem("key") == null){
+        sessionStorage.setItem("key", "value");
         let popupwidth = document.getElementById("popupimg").width;
         $( "#dialog" ).dialog({
             width: popupwidth + 50,
@@ -143,9 +144,9 @@
         console.log(poppedup);
     }
     else{
-        $( ".dialog" ).dialog( "destroy" );
-        console.log(poppedup);
+        image_x.parentNode.removeChild(popupimg);
     }
+
 
   } );
 
